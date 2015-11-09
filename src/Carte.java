@@ -26,5 +26,11 @@ public class Carte {
         return retourner;
     }
     
+    public void afficherCarte(){
+        System.out.println("nom : "+this.getNom()+" photo : "+this.getPhoto());
+    }
     
+    public void afficherCarteRetourner(){
+        System.out.println("nom : "+this.getNom()+" photo : "+this.getPhoto()+" date : "+this.getDate());
+    }
 }
