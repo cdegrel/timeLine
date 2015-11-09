@@ -9,4 +9,22 @@ public class Carte {
         this.date=date;
         retourner=false;
     }
+    
+    public String getNom(){
+        return nom;
+    }
+    
+    public String getPhoto(){
+        return photo;
+    }
+    
+    public int getDate(){
+        return date;
+    }
+    
+    public boolean getRetourner(){
+        return retourner;
+    }
+    
+    
 }
