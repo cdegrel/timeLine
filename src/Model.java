@@ -6,4 +6,8 @@ public class Model {
     public Model(){
 
     }
+
+    public String readRegle() {
+        return "";
+    }
 }
