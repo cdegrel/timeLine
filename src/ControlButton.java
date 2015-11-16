@@ -13,8 +13,10 @@ public class ControlButton implements ActionListener{
     }
 
     public void actionPerformed(ActionEvent e){
-        if (e.getSource() == vue.bValideNbJoueur){
+        for (int i = 0; i < vue.bChoix.length; i++) {
+            if (e.getSource() == vue.bChoix[i]){
 
+            }
         }
     }
 }

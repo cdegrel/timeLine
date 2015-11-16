@@ -6,10 +6,9 @@ public class Vue extends JFrame{
     protected Model model;
 
     protected JMenuItem nouveau, regle;
-    protected JTextField tPseudo[];
-    protected JButton bValideNbJoueur;
+    protected JButton bChoix[];
 
-    private JPanel pChoixNbJoueur[];
+    private JPanel pMenu;
 
     public Vue(Model model) {
         this.model = model;
@@ -26,29 +25,17 @@ public class Vue extends JFrame{
     }
 
     public void initIntro() {
-        tPseudo = new JTextField[model.getNB_MAX_JOUEUR()];
-        pChoixNbJoueur = new JPanel[model.getNB_MAX_JOUEUR()];
-        for (int i = 0; i < tPseudo.length; i++) {
-            tPseudo[i] = new JTextField(10);
-            pChoixNbJoueur[i] = new JPanel(new BorderLayout());
+        pMenu = new JPanel();
+        bChoix = new JButton[3];
+        for (int i = 0; i < bChoix.length; i++) {
+            bChoix[i] = new JButton((i+2)+" joueurs");
+            pMenu.add(bChoix[i]);
         }
-        pChoixNbJoueur[0].add(tPseudo[0], BorderLayout.WEST);
-        pChoixNbJoueur[1].add(tPseudo[1], BorderLayout.NORTH);
-        pChoixNbJoueur[2].add(tPseudo[2], BorderLayout.EAST);
-        pChoixNbJoueur[3].add(tPseudo[3], BorderLayout.SOUTH);
-
-        bValideNbJoueur = new JButton("Valider");
     }
 
     public void creerIntro() {
-        JPanel pValideNbJoueur = new JPanel(new BorderLayout());
-        pValideNbJoueur.add(bValideNbJoueur, BorderLayout.CENTER);
-
         JPanel englobe = new JPanel();
-        for (int i = 0; i < pChoixNbJoueur.length; i++) {
-            englobe.add(pChoixNbJoueur[i]);
-        }
-        englobe.add(pValideNbJoueur);
+        englobe.add(pMenu);
 
         JPanel panel = new JPanel();
         panel.add(englobe);
@@ -56,16 +43,9 @@ public class Vue extends JFrame{
     }
 
     public void initAttribut(int n){
-
     }
 
     public void creerWidget(int n){
-
-        JLabel ltest = new JLabel("test");
-
-        JPanel panel = new JPanel(new BorderLayout());
-        panel.add(ltest,BorderLayout.EAST);
-        setContentPane(panel);
     }
 
     public void creerMenu(){
@@ -83,7 +63,9 @@ public class Vue extends JFrame{
 
 
     public void setControlButton(ActionListener listener) {
-        bValideNbJoueur.addActionListener(listener);
+        for(JButton b : bChoix){
+            b.addActionListener(listener);
+        }
     }
 
     public void setControlMenu(ActionListener listener) {
