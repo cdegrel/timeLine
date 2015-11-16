@@ -46,6 +46,11 @@ public class Vue extends JFrame{
     }
 
     public void creerWidget(int n){
+        JPanel pTest = new JPanel();
+        JLabel test = new JLabel(model.getNbJoueur()+" ");
+
+        pTest.add(test);
+        setContentPane(pTest);
     }
 
     public void creerMenu(){
@@ -72,9 +77,10 @@ public class Vue extends JFrame{
         nouveau.addActionListener(listener);
     }
 
-    public void nouvellePartie(int n){
-        initAttribut(n);
-        creerWidget(n);
+    public void nouvellePartie(){
+        undisplay();
+        initAttribut(model.getNbJoueur());
+        creerWidget(model.getNbJoueur());
         display();
     }
 }
