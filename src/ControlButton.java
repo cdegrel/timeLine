@@ -13,6 +13,11 @@ public class ControlButton implements ActionListener{
     }
 
     public void actionPerformed(ActionEvent e){
-
+        for (int i = 0; i < vue.bChoix.length; i++) {
+            if (e.getSource() == vue.bChoix[i]){
+                model.setNbJoueur(i+2);
+                vue.nouvellePartie();
+            }
+        }
     }
 }
