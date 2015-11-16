@@ -1,4 +1,5 @@
 import java.util.ArrayDeque;
+import java.util.Collections;
 
 public class Pioche {
 
@@ -14,5 +15,9 @@ public class Pioche {
 
     public void ajouterUneCarte(Carte carte) {
         pioche.addLast(carte);
+    }
+
+    public void vider(){
+        pioche.clear();
     }
 }

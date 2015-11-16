@@ -11,12 +11,6 @@ public class Joueur {
         main = new ArrayList<Carte>();
     }
     
-    public void afficherMain(){
-        for(Carte c : main){
-            c.afficherCarte();
-        }
-    }
-    
     public String getNom(){
         return nom;
     }

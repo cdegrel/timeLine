@@ -1,11 +1,17 @@
+import java.awt.*;
+
 public class Carte {
-    private String nom, photo;
+    private String nom;
     private int date;
     private boolean retourner;
+
+    Toolkit tk = Toolkit.getDefaultToolkit();
+    private Image image, imadate;
     
-    public Carte(String nom, String photo, int date){
+    public Carte(String nom, int date){
         this.nom=nom;
-        this.photo=photo;
+        image= tk.getImage("Images/Image/" + nom + ".jpg");
+        imadate= tk.getImage("Images/Date/"+nom+date+".jpg");
         this.date=date;
         retourner=false;
     }
@@ -14,8 +20,12 @@ public class Carte {
         return nom;
     }
     
-    public String getPhoto(){
-        return photo;
+    public Image getImageCarte(){
+        if (retourner){
+            return imadate;
+        }else {
+            return image;
+        }
     }
     
     public int getDate(){
@@ -26,11 +36,11 @@ public class Carte {
         return retourner;
     }
     
-    public void afficherCarte(){
+    /*public void afficherCarte(){
         System.out.println("nom : "+this.getNom()+" photo : "+this.getPhoto());
     }
     
     public void afficherCarteRetourner(){
         System.out.println("nom : "+this.getNom()+" photo : "+this.getPhoto()+" date : "+this.getDate());
-    }
+    }*/
 }
