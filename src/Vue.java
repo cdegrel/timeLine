@@ -26,6 +26,11 @@ public class Vue extends JFrame{
 
     public void initIntro() {
         pMenu = new JPanel();
+        pMenu.setLayout(new BoxLayout(pMenu, BoxLayout.Y_AXIS));
+
+        JLabel lChoixJoueur = new JLabel("Choix du nombre de joueur");
+        pMenu.add(lChoixJoueur);
+
         bChoix = new JButton[3];
         for (int i = 0; i < bChoix.length; i++) {
             bChoix[i] = new JButton((i+2)+" joueurs");
@@ -35,7 +40,8 @@ public class Vue extends JFrame{
 
     public void creerIntro() {
         JPanel englobe = new JPanel();
-        englobe.add(pMenu);
+        englobe.setLayout(new BorderLayout());
+        englobe.add(pMenu, BorderLayout.CENTER);
 
         JPanel panel = new JPanel();
         panel.add(englobe);
@@ -43,6 +49,7 @@ public class Vue extends JFrame{
     }
 
     public void initAttribut(int n){
+
     }
 
     public void creerWidget(int n){
