@@ -24,25 +24,60 @@ public class Model {
         List<Carte> listCarte = new ArrayList<Carte>();
 
         listCarte.add(new Carte("1HommeDansLespace", 1961));
+        listCarte.add(new Carte("45Tours", 1949));
+        listCarte.add(new Carte("abeilles", -100000000));
+        listCarte.add(new Carte("automobile", 1769));
         listCarte.add(new Carte("baguetteDePain", 1830));
         listCarte.add(new Carte("bandeDessinee", 1826));
+        listCarte.add(new Carte("bombeAerosol", 1928));
+        listCarte.add(new Carte("bouteilleEnVerre", -200));
         listCarte.add(new Carte("cadranSolaire", -1500));
+        //listCarte.add(new Carte("cafeSoluble", xxxx));
+        listCarte.add(new Carte("cafetiere", 1802));
         listCarte.add(new Carte("calligraphieChinoise", -1200));
+        listCarte.add(new Carte("camembert", 1790));
         listCarte.add(new Carte("cartesAJouer", 900));
         listCarte.add(new Carte("cendrillon", 1697));
+        listCarte.add(new Carte("chronometre", 1735));
+        //listCarte.add(new Carte("clef", xxxx));
+        listCarte.add(new Carte("consoleDeJeux", 1971));
+        listCarte.add(new Carte("couteau", 1610));
         listCarte.add(new Carte("echecs", 570));
+        listCarte.add(new Carte("fableCorbeau", 1668));
         listCarte.add(new Carte("ferARepasserElectrique", 1882));
+        listCarte.add(new Carte("fermetureGlissiere", 1891));
         listCarte.add(new Carte("feuxDeSignalisation",1868));
         listCarte.add(new Carte("football", 1863));
+        listCarte.add(new Carte("fourchette", 972));
+        //listCarte.add(new Carte("frites", xxxx));
+        //listCarte.add(new Carte("grillePain", xxxx));
+        listCarte.add(new Carte("guitareElectrique", 1925));
+        listCarte.add(new Carte("helicoptere", 1825));
+        listCarte.add(new Carte("hydravion", 1910));
+        listCarte.add(new Carte("jumelles", 1608));
+        listCarte.add(new Carte("lesTroisMousquetaires", 1844));
         listCarte.add(new Carte("lunettesDeSoleil", 1929));
         listCarte.add(new Carte("marteauPiqueur",1861));
+        listCarte.add(new Carte("microOndes",1946));
+        listCarte.add(new Carte("monnaie", -680));
+        listCarte.add(new Carte("motsCroises", 1913));
         listCarte.add(new Carte("navetteSpaciale", 1981));
+        listCarte.add(new Carte("parapluie", 1705));
         listCarte.add(new Carte("pierreDeRosette", -196));
+        listCarte.add(new Carte("poubelle", 1884));
+        listCarte.add(new Carte("rasoirElectrique", 1911));
+        listCarte.add(new Carte("reveil", 1847));
         listCarte.add(new Carte("robinDesBois", 1377));
         listCarte.add(new Carte("sandwich", 1762));
+        listCarte.add(new Carte("savon", -1500));
         listCarte.add(new Carte("secheCheveux", 1890));
+        listCarte.add(new Carte("sherlock", 1887));
         listCarte.add(new Carte("soucoupeVolante", 1947));
-
+        listCarte.add(new Carte("sudoku", 1979));
+        listCarte.add(new Carte("superHeros", 1938));
+        listCarte.add(new Carte("verre", -2500));
+        listCarte.add(new Carte("voyageDansLaLune", 1902));
+        //listCarte.add(new Carte("yeti", xxxx));
 
         Collections.shuffle(listCarte);
         for (Carte carte : listCarte) {
@@ -50,3 +85,11 @@ public class Model {
         }
     }
 }
+/*
+manque dans image/date:
+cafeSoluble
+clef
+frites
+grillePain
+yeti
+*/
