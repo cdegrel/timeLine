@@ -6,9 +6,10 @@ public class Vue extends JFrame{
     protected Model model;
 
     protected JMenuItem nouveau, regle;
-    protected JButton bChoix[];
+    protected JButton bChoix[], bValid;
+    protected JTextField tPseudo[];
 
-    private JPanel pMenu;
+    private JPanel pMenu, pPseudo[];
 
     public Vue(Model model) {
         this.model = model;
@@ -26,7 +27,6 @@ public class Vue extends JFrame{
 
     public void initIntro() {
         pMenu = new JPanel();
-        pMenu.setLayout(new BoxLayout(pMenu, BoxLayout.Y_AXIS));
 
         JLabel lChoixJoueur = new JLabel("Choix du nombre de joueur");
         pMenu.add(lChoixJoueur);
@@ -49,15 +49,25 @@ public class Vue extends JFrame{
     }
 
     public void initAttribut(int n){
-
+        tPseudo = new JTextField[n];
+        pPseudo = new JPanel[n];
+        for (int i = 0; i < n; i++) {
+            tPseudo[i] = new JTextField(10);
+            pPseudo[i].add(tPseudo[i]);
+        }
+        bValid = new JButton("Jouer");
     }
 
     public void creerWidget(int n){
-        JPanel pTest = new JPanel();
-        JLabel test = new JLabel(model.getNbJoueur()+" ");
+        JPanel englobe = new JPanel();
+        for (JPanel p : pPseudo){
+            englobe.add(p);
+        }
+        englobe.add(bValid);
 
-        pTest.add(test);
-        setContentPane(pTest);
+        JPanel panel = new JPanel();
+        panel.add(englobe);
+        setContentPane(panel);
     }
 
     public void creerMenu(){
