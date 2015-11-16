@@ -3,9 +3,11 @@ import java.util.ArrayList;
 public class Joueur {
     private String nom;
     private ArrayList<Carte> main;
+    private Pioche pioche;
     
-    public Joueur(String nom){
+    public Joueur(String nom, Pioche pioche){
         this.nom = nom;
+        this.pioche = pioche;
         main = new ArrayList<Carte>();
     }
     
@@ -24,10 +26,10 @@ public class Joueur {
     }
     
     public void piocher(){
-        if(main>5){
-            return null;
+        if(main.size()>5){
+            return;
         }
-        main.add(tirerUneCarte());
+        main.add(pioche.tirerUneCarte());
     }
     
     public Carte getCarte(int index){
@@ -37,7 +39,7 @@ public class Joueur {
         return main.get(index);
     }
     
-    public void enleverCarte(int index){
+    public Carte enleverCarte(int index){
         if(index<0 || index>main.size()){
             return null;
         }
