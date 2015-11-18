@@ -10,8 +10,8 @@ public class Carte {
     
     public Carte(String nom, int date){
         this.nom=nom;
-        image= tk.getImage("Images/Image/" + nom + ".jpg");
-        imadate= tk.getImage("Images/Date/"+nom+date+".jpg");
+        image= tk.getImage("Image/Image/" + nom + ".jpg");
+        imadate= tk.getImage("Image/Date/"+nom+date+".jpg");
         this.date=date;
         retourner=false;
     }
