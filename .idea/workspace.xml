@@ -1,115 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4138155-b246-4156-901b-71e4be4ecf64" name="Default" comment="2e partie des images&#10;manque dans image/date:&#10;cafeSoluble&#10;clef&#10;frites&#10;grillePain&#10;yeti">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/1HommeDansLespace.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/1HommeDansLespace1961.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/45Tours1949.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/45tours.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/TIMELINE4 001.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/TIMELINE4 001.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/abeilles-100000000.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/abeilles.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/automobile.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/automobile1769.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/baguetteDePain.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/baguetteDePain1830.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/bandeDessinee.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/bandeDessinee1826.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/bombeAerosol.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/bombeAerosol1928.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/bouteilleEnVerre-200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/bouteilleEnVerre.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/cadranSolaire-1500.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/cadranSolaire.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/cafeSoluble.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/cafetiere.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/cafetiere1802.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/calligraphieChinoise-1200.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/calligraphieChinoise.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/camembert.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/camembert1790.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/cartesAJouer.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/cartesAJouer900.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/cendrillon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/cendrillon1697.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/chronometre.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/chronometre1735.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/clef.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/consoleDeJeux.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/consoleDeJeux1971.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/couteau.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/couteau1610.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/echecs.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/echecs570.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/fableCorbeau.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/fableCorbeau1668.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/ferARepasserElectrique.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/ferARepasserElectrique1882.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/fermetureGlissiere.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/fermetureGlissiere1891.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/feuxDeSignalisation.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/feuxDeSignalisation1868.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/football.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/football1863.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/fourchette.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/fourchette972.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/frites.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/grillePain.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/guitareElectrique.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/guitareElectrique1924.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/helicoptere.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/helicoptere1825.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/hydravion.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/hydravion1910.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/jumelles.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/jumelles1608.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/lesTroisMousquetaires.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/lesTroisMousquetaires1844.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/lunettesDeSoleil.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/lunettesDeSoleil1929.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/marteauPiqueur.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/marteauPiqueur1861.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/microOnde.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/microOndes1946.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/monnaie-680.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/monnaie.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/motsCroises.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/motsCroises1913.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/navetteSpatiale.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/navetteSpatiale1981.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/parapluie.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/parapluie1705.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/pierreDeRosette-196.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/pierreDeRosette.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/poubelle.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/poubelle1884.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/rasoirElectrique.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/rasoirElectrique1911.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/reveil.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/reveil1847.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/robinDesBois.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/robinDesBois1377.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/sandwich.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/sandwich1762.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/savon-1500.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/savon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/secheCheveux.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/secheCheveux1890.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/sherlock.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/sherlock1887.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/soucoupeVolante.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/soucoupeVolante1947.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/sudoku.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/sudoku1979.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/superHeros.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/superHeros1938.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/verre-2500.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/verre.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/voyageDansLaLune.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Date/voyageDansLaLune1902.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Image/Image/yeti.jpg" />
+    <list default="true" id="e4138155-b246-4156-901b-71e4be4ecf64" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\1HommeDansLespace1961.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\45Tours1949.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\TIMELINE4 001.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\abeilles-100000000.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\automobile1769.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\baguetteDePain1830.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\bandeDessinee1826.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\bombeAerosol1928.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\bouteilleEnVerre-200.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\cadranSolaire-1500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\cafetiere1802.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\calligraphieChinoise-1200.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\camembert1790.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\cartesAJouer900.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\cendrillon1697.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\chronometre1735.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\consoleDeJeux1971.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\couteau1610.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\echecs570.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\fableCorbeau1668.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\ferARepasserElectrique1882.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\fermetureGlissiere1891.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\feuxDeSignalisation1868.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\football1863.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\fourchette972.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\guitareElectrique1924.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\helicoptere1825.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\hydravion1910.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\jumelles1608.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\lesTroisMousquetaires1844.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\lunettesDeSoleil1929.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\marteauPiqueur1861.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\microOndes1946.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\monnaie-680.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\motsCroises1913.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\navetteSpatiale1981.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\parapluie1705.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\pierreDeRosette-196.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\poubelle1884.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\rasoirElectrique1911.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\reveil1847.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\robinDesBois1377.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\sandwich1762.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\savon-1500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\secheCheveux1890.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\sherlock1887.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\soucoupeVolante1947.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\sudoku1979.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\superHeros1938.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\verre-2500.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Date\voyageDansLaLune1902.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\1HommeDansLespace.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\45tours.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\TIMELINE4 001.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\abeilles.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\automobile.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\baguetteDePain.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\bandeDessinee.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\bombeAerosol.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\bouteilleEnVerre.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\cadranSolaire.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\cafeSoluble.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\cafetiere.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\calligraphieChinoise.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\camembert.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\cartesAJouer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\cendrillon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\chronometre.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\clef.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\consoleDeJeux.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\couteau.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\echecs.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\fableCorbeau.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\ferARepasserElectrique.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\fermetureGlissiere.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\feuxDeSignalisation.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\football.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\fourchette.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\frites.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\grillePain.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\guitareElectrique.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\helicoptere.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\hydravion.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\jumelles.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\lesTroisMousquetaires.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\lunettesDeSoleil.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\marteauPiqueur.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\microOnde.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\monnaie.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\motsCroises.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\navetteSpatiale.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\parapluie.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\pierreDeRosette.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\poubelle.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\rasoirElectrique.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\reveil.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\robinDesBois.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\sandwich.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\savon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\secheCheveux.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\sherlock.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\soucoupeVolante.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\sudoku.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\superHeros.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\verre.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\voyageDansLaLune.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kiéran\Desktop\IDEA\TimeLine\timeLine\Image\Image\yeti.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Carte.java" afterPath="$PROJECT_DIR$/src/Carte.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="timeLine.iws" />
@@ -168,7 +169,7 @@
       <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1632">
+            <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1530">
               <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -180,12 +181,9 @@
       <file leaf-file-name="Carte.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Carte.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17817679" vertical-offset="92" max-vertical-offset="816">
-              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-              <folding>
-                <element signature="e#678#679#0" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.22513813" vertical-offset="58" max-vertical-offset="782">
+              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -271,7 +269,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -318,23 +316,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timeLine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="timeLine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,7 +335,7 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="vcs.Git" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
@@ -657,7 +641,10 @@
       <workItem from="1447710130721" duration="242000" />
       <workItem from="1447751771314" duration="1383000" />
       <workItem from="1447838444769" duration="368000" />
-      <workItem from="1447874578672" duration="124000" />
+      <workItem from="1447874578672" duration="479000" />
+      <workItem from="1447875375099" duration="14000" />
+      <workItem from="1447875412748" duration="470000" />
+      <workItem from="1447876430237" duration="39000" />
     </task>
     <task id="LOCAL-00001" summary="Corrections rapides">
       <created>1447655469789</created>
@@ -701,11 +688,17 @@
       <option name="project" value="LOCAL" />
       <updated>1447710164860</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="2e partie des images&#10;manque dans image/date:&#10;cafeSoluble&#10;clef&#10;frites&#10;grillePain&#10;yeti">
+      <created>1447874773788</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1447874773788</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14053000" />
+    <option name="totallyTimeSpent" value="14931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="402" y="33" width="1337" height="887" extended-state="0" />
@@ -783,10 +776,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="816">
           <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -852,10 +842,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="816">
           <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -921,10 +908,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="816">
           <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -990,10 +974,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1059,10 +1040,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="782">
           <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1192,12 +1170,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Carte.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17817679" vertical-offset="92" max-vertical-offset="816">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding>
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.22513813" vertical-offset="58" max-vertical-offset="782">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
