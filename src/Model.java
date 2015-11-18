@@ -79,17 +79,10 @@ public class Model {
         listCarte.add(new Carte("voyageDansLaLune", 1902));
         //listCarte.add(new Carte("yeti", xxxx));
 
+
         Collections.shuffle(listCarte);
         for (Carte carte : listCarte) {
             pioche.ajouterUneCarte(carte);
         }
     }
 }
-/*
-manque dans image/date:
-cafeSoluble
-clef
-frites
-grillePain
-yeti
-*/
