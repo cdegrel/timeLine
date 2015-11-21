@@ -6,9 +6,22 @@ public class Model {
     private int nbJoueur;
     public Pioche pioche;
 
+    public CartesPlateau plateau;
+
 
     public Model(){
+        plateau = new CartesPlateau();
+        pioche = new Pioche();
         initPioche();
+
+        //test !
+        plateau.ajouterCarte(pioche.tirerUneCarte());
+        plateau.ajouterCarte(pioche.tirerUneCarte());
+        plateau.ajouterCarte(pioche.tirerUneCarte());
+        plateau.ajouterCarte(pioche.tirerUneCarte());
+        plateau.ajouterCarte(pioche.tirerUneCarte());
+        plateau.ajouterCarte(pioche.tirerUneCarte());
+        plateau.ajouterCarte(pioche.tirerUneCarte());
     }
 
     public int getNbJoueur(){ return nbJoueur; }

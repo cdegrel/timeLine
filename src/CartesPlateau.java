@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class CartesPlateau {
 
@@ -22,6 +23,14 @@ public class CartesPlateau {
         }
     }
 
+    public void ajouterCarte(Carte carte, int index){
+        tas.add(index, carte);
+    }
+
+    public void ajouterCarte(Carte carte){
+        tas.add(carte);
+    }
+
     public boolean verifierChronologie() {
         int compare = 0;
         Carte carte;
@@ -34,5 +43,9 @@ public class CartesPlateau {
             }
         }
         return true;
+    }
+
+    public List<Carte> getPlateau() {
+        return tas;
     }
 }

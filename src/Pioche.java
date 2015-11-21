@@ -10,7 +10,7 @@ public class Pioche {
     }
 
     public Carte tirerUneCarte() {
-        return pioche.getFirst();
+        return pioche.pop();
     }
 
     public void ajouterUneCarte(Carte carte) {
