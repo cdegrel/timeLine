@@ -45,6 +45,10 @@ public class CartesPlateau {
         return true;
     }
 
+    public void retournerPlateau(){
+        for (Carte crt : tas){ crt.retourner(); }
+    }
+
     public List<Carte> getPlateau() {
         return tas;
     }

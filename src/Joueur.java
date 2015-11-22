@@ -9,6 +9,9 @@ public class Joueur {
         this.nom = nom;
         this.pioche = pioche;
         main = new ArrayList<Carte>();
+        for (int i = 0; i < 5; i++) {
+            piocher();
+        }
     }
     
     public String getNom(){
@@ -32,6 +35,8 @@ public class Joueur {
         }
         return main.get(index);
     }
+
+    public ArrayList<Carte> getMain(){ return main; }
     
     public Carte enleverCarte(int index){
         if(index<0 || index>main.size()){

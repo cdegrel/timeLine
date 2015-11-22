@@ -5,6 +5,9 @@ import java.util.List;
 public class Model {
     private int nbJoueur;
     public Pioche pioche;
+    public Joueur joueur1, joueur2, joueur3, joueur4;
+
+    public Carte select;
 
     public CartesPlateau plateau;
 
@@ -22,6 +25,13 @@ public class Model {
         plateau.ajouterCarte(pioche.tirerUneCarte());
         plateau.ajouterCarte(pioche.tirerUneCarte());
         plateau.ajouterCarte(pioche.tirerUneCarte());
+        //select = pioche.tirerUneCarte();
+        plateau.retournerPlateau();
+
+        joueur1 = new Joueur("j1",pioche);
+        joueur2 = new Joueur("j2",pioche);
+        joueur3 = new Joueur("j3",pioche);
+        joueur4 = new Joueur("j4",pioche);
     }
 
     public int getNbJoueur(){ return nbJoueur; }
@@ -64,7 +74,7 @@ public class Model {
         listCarte.add(new Carte("fourchette", 972));
         //listCarte.add(new Carte("frites", xxxx));
         //listCarte.add(new Carte("grillePain", xxxx));
-        listCarte.add(new Carte("guitareElectrique", 1925));
+        listCarte.add(new Carte("guitareElectrique", 1924));
         listCarte.add(new Carte("helicoptere", 1825));
         listCarte.add(new Carte("hydravion", 1910));
         listCarte.add(new Carte("jumelles", 1608));
@@ -74,7 +84,7 @@ public class Model {
         listCarte.add(new Carte("microOndes",1946));
         listCarte.add(new Carte("monnaie", -680));
         listCarte.add(new Carte("motsCroises", 1913));
-        listCarte.add(new Carte("navetteSpaciale", 1981));
+        listCarte.add(new Carte("navetteSpatiale", 1981));
         listCarte.add(new Carte("parapluie", 1705));
         listCarte.add(new Carte("pierreDeRosette", -196));
         listCarte.add(new Carte("poubelle", 1884));

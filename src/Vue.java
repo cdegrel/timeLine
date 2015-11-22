@@ -1,17 +1,18 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class Vue extends JFrame{
     protected Model model;
 
     protected JMenuItem nouveau, regle;
-    protected JButton bChoix[], bValid;
+    public JButton bChoix[], bValid;
+    public ArrayList<JButton> bPlus;
     protected JTextField tPseudo[];
 
-    private JPanel pMenu, pPseudo[], plateau;
-    private JPanel j1, j2, j3, j4;
-    private ScrollablePanel scrolplateau;
+    private JPanel pMenu, pPseudo[], plateau, panej1, panej2, panej3, panej4;
+    public ScrollablePanel scrolplateau, j1, j2, j3, j4;
 
     public Vue(Model model) {
         this.model = model;
@@ -21,7 +22,7 @@ public class Vue extends JFrame{
         creerMenu();
 
         setTitle("TimeLine");
-        setSize(1000, 700);
+        setSize(1200, 900);
         setLocationRelativeTo(null);
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -58,20 +59,50 @@ public class Vue extends JFrame{
             pPseudo[i].add(tPseudo[i]);
         }
         bValid = new JButton("Jouer");*/
-        j1 = new JPanel();
-        j1.add(new JLabel("joueur 1"));
-        j2 = new JPanel();
-        j2.add(new JLabel("joueur 2"));
-        j3 = new JPanel();
-        j3.add(new JLabel("joueur 3"));
-        j4 = new JPanel();
-        j4.add(new JLabel("joueur 4"));
+
+        j1 = initScrollableJoueur(BoxLayout.X_AXIS);
+        j2 = initScrollableJoueur(BoxLayout.Y_AXIS);
+        j3 = initScrollableJoueur(BoxLayout.X_AXIS);
+        j4 = initScrollableJoueur(BoxLayout.Y_AXIS);
+
+        for (Carte crt1 : model.joueur1.getMain()){ j1.add(crt1); }
+        for (Carte crt2 : model.joueur2.getMain()){ j2.add(crt2); }
+        for (Carte crt3 : model.joueur3.getMain()){ j3.add(crt3); }
+        for (Carte crt4 : model.joueur4.getMain()){ j4.add(crt4); }
+
+        j1.revalidate();
+        j2.revalidate();
+        j3.revalidate();
+        j4.revalidate();
+
+        JScrollPane js1 = new JScrollPane(j1,
+                ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED ,ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+        js1.setPreferredSize(new Dimension(680,270));
+        JScrollPane js2 = new JScrollPane(j2,
+                ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS ,ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+        js2.setPreferredSize(new Dimension(180, 685));
+        JScrollPane js3 = new JScrollPane(j3,
+                ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED ,ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+        js3.setPreferredSize(new Dimension(680,270));
+        JScrollPane js4 = new JScrollPane(j4,
+                ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS ,ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+        js4.setPreferredSize(new Dimension(180,685));
+
+        panej1 = new JPanel();
+        panej2 = new JPanel();
+        panej3 = new JPanel();
+        panej4 = new JPanel();
+
+        panej1.add(js1);
+        panej2.add(js2);
+        panej3.add(js3);
+        panej4.add(js4);
 
         initPlateau();
         JScrollPane scrollPlateau = new JScrollPane(scrolplateau,
                 ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED ,ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
-        scrollPlateau.setPreferredSize(new Dimension(700,300));
-        scrollPlateau.setMaximumSize(new Dimension(700,300));
+        scrollPlateau.setPreferredSize(new Dimension(680,270));
+        scrollPlateau.setSize(new Dimension(685, 270));
 
 
         plateau = new JPanel();
@@ -82,17 +113,24 @@ public class Vue extends JFrame{
 
     public void creerWidget(){
         JPanel englobe = new JPanel();
-        englobe.setLayout(new BorderLayout(10,10));
+        //englobe.setLayout(new BorderLayout(10,10));
+        englobe.setLayout(new BoxLayout(englobe, BoxLayout.X_AXIS));
         /*for (JPanel p : pPseudo){
             englobe.add(p);
         }*/
         //englobe.add(bValid);
 
-        englobe.add(plateau, BorderLayout.CENTER);
-        englobe.add(j1, BorderLayout.PAGE_END);
-        englobe.add(j2, BorderLayout.EAST);
-        englobe.add(j3, BorderLayout.PAGE_START);
-        englobe.add(j4, BorderLayout.WEST);
+        JPanel milieu = new JPanel();
+        milieu.setLayout(new BoxLayout(milieu,BoxLayout.Y_AXIS));
+        milieu.add(panej1);
+        milieu.add(plateau);
+        milieu.add(panej3);
+
+        englobe.add(panej4);
+        englobe.add(milieu);
+        englobe.add(panej2);
+
+
         setContentPane(englobe);
     }
 
@@ -109,12 +147,17 @@ public class Vue extends JFrame{
     public void initPlateau(){
         scrolplateau = new ScrollablePanel();
         scrolplateau.setLayout(new BoxLayout(scrolplateau, BoxLayout.X_AXIS));
+
+        bPlus = new ArrayList<JButton>();
+        bPlus.add(new JButton("+"));
+        scrolplateau.add(bPlus.get(0));
         for (Carte crt : model.plateau.getPlateau()){
             scrolplateau.add(crt);
-            scrolplateau.add(new JButton("+"));
+            bPlus.add(new JButton("+"));
+            scrolplateau.add(bPlus.get(bPlus.size()-1));
         }
 
-        scrolplateau.setPreferredSize(new Dimension(1500, 270));
+        scrolplateau.revalidate();
         scrolplateau.repaint();
     }
 
@@ -126,6 +169,9 @@ public class Vue extends JFrame{
         for(JButton b : bChoix){
             b.addActionListener(listener);
         }
+        /*for(JButton bp : bPlus){
+            bp.addActionListener(listener);
+        }*/
     }
 
     public void setControlMenu(ActionListener listener) {
@@ -137,5 +183,12 @@ public class Vue extends JFrame{
         initAttribut();
         creerWidget();
         display();
+    }
+
+    private ScrollablePanel initScrollableJoueur(int sensXouY){
+        ScrollablePanel scrollable = new ScrollablePanel();
+        scrollable.setLayout(new BoxLayout(scrollable, sensXouY));
+
+        return scrollable;
     }
 }
