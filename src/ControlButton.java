@@ -21,19 +21,5 @@ public class ControlButton implements ActionListener{
                 vue.nouvellePartie();
             }
         }
-
-        for (int j = 0; j < vue.bPlus.size(); j++) {
-            if (e.getSource() == vue.bPlus.get(j) && model.select != null){
-                if (true){ // coup valide
-                    vue.scrolplateau.add(model.select,(j*2)+1);
-                    model.select = null;
-                    vue.bPlus.add((j*2)+2,new JButton("+"));
-                    vue.scrolplateau.revalidate();
-                    vue.scrolplateau.repaint();
-                }else{
-                    System.out.println("coup impossible");
-                }
-            }
-        }
     }
 }

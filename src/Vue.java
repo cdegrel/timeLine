@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class Vue extends JFrame{
     protected Model model;
+    public ControlPlus controlPlus;
 
     protected JMenuItem nouveau, regle;
     public JButton bChoix[];
@@ -16,6 +17,7 @@ public class Vue extends JFrame{
 
     public Vue(Model model) {
         this.model = model;
+        controlPlus = new ControlPlus(model,this);
 
         initIntro();
         creerIntro();
@@ -104,11 +106,15 @@ public class Vue extends JFrame{
         scrolplateau.setLayout(new BoxLayout(scrolplateau, BoxLayout.X_AXIS));
 
         bPlus = new ArrayList<JButton>();
-        bPlus.add(new JButton("+"));
+        JButton jb1 = new JButton("+");
+        jb1.addActionListener(controlPlus);
+        bPlus.add(jb1);
         scrolplateau.add(bPlus.get(0));
         for (Carte crt : model.plateau.getPlateau()){
             scrolplateau.add(crt);
-            bPlus.add(new JButton("+"));
+            JButton jb = new JButton("+");
+            jb.addActionListener(controlPlus);
+            bPlus.add(jb);
             scrolplateau.add(bPlus.get(bPlus.size()-1));
         }
 
@@ -124,9 +130,10 @@ public class Vue extends JFrame{
         for(JButton b : bChoix){
             b.addActionListener(listener);
         }
-        /*for(JButton bp : bPlus){
-            bp.addActionListener(listener);
-        }*/
+    }
+
+    public void addActionPlus(JButton jb){
+        jb.addActionListener(controlPlus);
     }
 
     public void setControlMenu(ActionListener listener) {

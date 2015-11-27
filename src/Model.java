@@ -6,15 +6,16 @@ public class Model {
     private int nbJoueur;
     public Pioche pioche;
     public Joueur[] joueurs;
+    public int tour;
 
     public Carte select;
 
     public CartesPlateau plateau;
 
-
     public Model(){
         plateau = new CartesPlateau();
         pioche = new Pioche();
+        tour = 0;
         initPioche();
 
         //test !
@@ -25,7 +26,7 @@ public class Model {
         plateau.ajouterCarte(pioche.tirerUneCarte());
         plateau.ajouterCarte(pioche.tirerUneCarte());
         plateau.ajouterCarte(pioche.tirerUneCarte());
-        //select = pioche.tirerUneCarte();
+        select = pioche.tirerUneCarte();
         plateau.retournerPlateau();
 
         initJoueurs();
@@ -34,6 +35,11 @@ public class Model {
     public int getNbJoueur(){ return nbJoueur; }
 
     public void setNbJoueur(int nbJoueur){ this.nbJoueur = nbJoueur; }
+
+    public void tourSuivant(){
+        tour++;
+        if (tour>=nbJoueur) tour = 1;
+    }
 
     public String readRegle() {
         return "";
