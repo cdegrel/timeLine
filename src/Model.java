@@ -20,13 +20,7 @@ public class Model {
 
         //test !
         plateau.ajouterCarte(pioche.tirerUneCarte());
-        plateau.ajouterCarte(pioche.tirerUneCarte());
-        plateau.ajouterCarte(pioche.tirerUneCarte());
-        plateau.ajouterCarte(pioche.tirerUneCarte());
-        plateau.ajouterCarte(pioche.tirerUneCarte());
-        plateau.ajouterCarte(pioche.tirerUneCarte());
-        plateau.ajouterCarte(pioche.tirerUneCarte());
-        select = pioche.tirerUneCarte();
+
         plateau.retournerPlateau();
 
         initJoueurs();

@@ -6,7 +6,6 @@ public class Carte extends JPanel{
     private int date;
     private boolean retourner;
 
-    Toolkit tk = Toolkit.getDefaultToolkit();
     protected Image image, imadate;
     
     public Carte(String nom, int date){
@@ -22,14 +21,6 @@ public class Carte extends JPanel{
     
     public String getNom(){
         return nom;
-    }
-    
-    public Image getImageCarte(){
-        if (retourner){
-            return imadate;
-        }else {
-            return image;
-        }
     }
     
     public int getDate(){

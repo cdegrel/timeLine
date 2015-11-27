@@ -44,6 +44,10 @@ public class Joueur {
         }
         return main.remove(index);
     }
+
+    public void enleverCarte(Carte crt){
+        main.remove(crt);
+    }
     
     public boolean verifMainVide(){
         return main.isEmpty();

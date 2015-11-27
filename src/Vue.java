@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.border.BevelBorder;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -6,6 +7,7 @@ import java.util.ArrayList;
 public class Vue extends JFrame{
     protected Model model;
     public ControlPlus controlPlus;
+    public ControlMouse controlMouse;
 
     protected JMenuItem nouveau, regle;
     public JButton bChoix[];
@@ -18,6 +20,7 @@ public class Vue extends JFrame{
     public Vue(Model model) {
         this.model = model;
         controlPlus = new ControlPlus(model,this);
+        controlMouse = new ControlMouse(model,this);
 
         initIntro();
         creerIntro();
@@ -60,6 +63,7 @@ public class Vue extends JFrame{
         for (int i = 0; i<model.getNbJoueur(); i++) {
             panelJoueur[i] = new JPanel();
             for (Carte crt : model.joueurs[i].getMain()){
+                crt.addMouseListener(controlMouse);
                 panelJoueur[i].add(crt);
             }
 
@@ -111,6 +115,7 @@ public class Vue extends JFrame{
         bPlus.add(jb1);
         scrolplateau.add(bPlus.get(0));
         for (Carte crt : model.plateau.getPlateau()){
+            crt.addMouseListener(controlMouse);
             scrolplateau.add(crt);
             JButton jb = new JButton("+");
             jb.addActionListener(controlPlus);
