@@ -16,10 +16,7 @@ public class Carte extends JPanel{
 
         this.date=date;
         retourner=false;
-        setSize(new Dimension(160,245));
-        setMaximumSize(new Dimension(160,245));
-        setMinimumSize(new Dimension(160,245));
-        setPreferredSize(new Dimension(160,245));
+        setPreferredSize(new Dimension(250,345));
         setBackground(new Color(100,100,100)); //pour les voir quand l'image marche pas...
     }
     
@@ -49,9 +46,9 @@ public class Carte extends JPanel{
         super.paintComponent(g);
         g.drawString(nom,10,10);
         if(retourner){
-            g.drawImage(imadate,0,0,160,245,null);
+            g.drawImage(imadate,0,0,250,345,null);
         }else{
-            g.drawImage(image,0,0,160,245,null);
+            g.drawImage(image,0,0,250,345,null);
         }
 
     }

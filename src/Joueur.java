@@ -9,7 +9,7 @@ public class Joueur {
         this.nom = nom;
         this.pioche = pioche;
         main = new ArrayList<Carte>();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 6; i++) {
             piocher();
         }
     }
@@ -23,7 +23,7 @@ public class Joueur {
     }
     
     public void piocher(){
-        if(main.size()>5){
+        if(main.size()>6){
             return;
         }
         main.add(pioche.tirerUneCarte());

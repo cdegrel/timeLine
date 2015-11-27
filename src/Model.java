@@ -5,7 +5,7 @@ import java.util.List;
 public class Model {
     private int nbJoueur;
     public Pioche pioche;
-    public Joueur joueur1, joueur2, joueur3, joueur4;
+    public Joueur[] joueurs;
 
     public Carte select;
 
@@ -28,10 +28,7 @@ public class Model {
         //select = pioche.tirerUneCarte();
         plateau.retournerPlateau();
 
-        joueur1 = new Joueur("j1",pioche);
-        joueur2 = new Joueur("j2",pioche);
-        joueur3 = new Joueur("j3",pioche);
-        joueur4 = new Joueur("j4",pioche);
+        initJoueurs();
     }
 
     public int getNbJoueur(){ return nbJoueur; }
@@ -40,6 +37,13 @@ public class Model {
 
     public String readRegle() {
         return "";
+    }
+
+    public void initJoueurs(){
+        joueurs = new Joueur[nbJoueur];
+        for (int i = 0; i < nbJoueur; i++){
+            joueurs[i] = new Joueur("joueur "+(i+1), pioche);
+        }
     }
 
     public void initPioche(){

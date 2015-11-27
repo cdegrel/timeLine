@@ -17,6 +17,7 @@ public class ControlButton implements ActionListener{
         for (int i = 0; i < vue.bChoix.length; i++) {
             if (e.getSource() == vue.bChoix[i]){
                 model.setNbJoueur(i+2);
+                model.initJoueurs();
                 vue.nouvellePartie();
             }
         }
