@@ -17,8 +17,10 @@ public class ControlMenu implements ActionListener {
         if(e.getSource() == vue.nouveau)
             nouvellePartie();
 
-        if(e.getSource() == vue.regle)
+        if(e.getSource() == vue.regle) {
+            System.out.println("regles");
             afficherRegle();
+        }
     }
 
     private void nouvellePartie(){
@@ -33,6 +35,8 @@ public class ControlMenu implements ActionListener {
     }
 
     private void afficherRegle(){
-        JOptionPane.showMessageDialog(vue, "Regle du jeu :\n"+model.readRegle());
+        JOptionPane.showMessageDialog(vue, "", "regles",
+                JOptionPane.INFORMATION_MESSAGE,
+                model.getRegle());
     }
 }

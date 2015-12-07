@@ -142,7 +142,9 @@ public class Vue extends JFrame{
     }
 
     public void setControlMenu(ActionListener listener) {
+
         nouveau.addActionListener(listener);
+        regle.addActionListener(listener);
     }
 
     public void nouvellePartie(){

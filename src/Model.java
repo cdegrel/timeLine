@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -7,6 +8,7 @@ public class Model {
     public Pioche pioche;
     public Joueur[] joueurs;
     public int tour;
+    public ImageIcon regles;
 
     public Carte select;
 
@@ -15,10 +17,11 @@ public class Model {
     public Model(){
         plateau = new CartesPlateau();
         pioche = new Pioche();
+        regles = new ImageIcon("Images/regles.png");
         tour = 0;
+
         initPioche();
 
-        //test !
         plateau.ajouterCarte(pioche.tirerUneCarte());
 
         plateau.retournerPlateau();
@@ -35,8 +38,8 @@ public class Model {
         if (tour>=nbJoueur) tour = 1;
     }
 
-    public String readRegle() {
-        return "";
+    public ImageIcon getRegle() {
+        return regles;
     }
 
     public void initJoueurs(){
