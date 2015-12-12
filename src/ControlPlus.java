@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -19,6 +20,9 @@ public class ControlPlus implements ActionListener{
         for (int j = 0; j < vue.bPlus.size(); j++) {
             if (e.getSource() == vue.bPlus.get(j) && model.select != null){
                 if (model.plateau.compareDate(model.select, j)){ // coup valide
+                    vue.labelDate.setText("coup possible, Date : " + model.select.getDate());
+                    vue.labelDate.setForeground(Color.GREEN);
+
                     model.select.setBorder(null);
                     model.plateau.ajouterCarte(model.select,j);
                     for (Joueur joueur : model.joueurs) {
@@ -48,7 +52,8 @@ public class ControlPlus implements ActionListener{
                     vue.tabPane.revalidate();
                     vue.tabPane.repaint();
                 }else{
-                    System.out.println("coup impossible, Date : "+model.select.getDate());
+                    vue.labelDate.setText("coup impossible, Date : " + model.select.getDate());
+                    vue.labelDate.setForeground(Color.RED);
 
                     /*model.select.retourner();
                     model.select.revalidate();
@@ -76,6 +81,7 @@ public class ControlPlus implements ActionListener{
                     vue.reInitTabPane();
 
                 }
+                vue.joueurGagne();
                 vue.joueurSuivant();
             }
         }

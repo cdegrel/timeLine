@@ -115,4 +115,13 @@ public class Model {
             pioche.ajouterUneCarte(carte);
         }
     }
+
+    public int testJoueurGagne(){
+        for(int i=0; i<nbJoueur; i++){
+            if (joueurs[i].getMain().size() == 0){
+                return i;
+            }
+        }
+        return -1;
+    }
 }

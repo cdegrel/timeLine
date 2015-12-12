@@ -16,6 +16,7 @@ public class Vue extends JFrame{
     private JPanel pMenu, plateau, panelJoueur[];
     public JTabbedPane tabPane;
     public ScrollablePanel scrolplateau;
+    public JLabel labelDate;
 
     public Vue(Model model) {
         this.model = model;
@@ -97,6 +98,9 @@ public class Vue extends JFrame{
         plateau.setLayout(new GridBagLayout());
         plateau.add(scrollPlateau);
 
+        labelDate = new JLabel(" ");
+        labelDate.setPreferredSize(new Dimension(1550,20));
+
     }
 
     public void creerWidget(){
@@ -105,6 +109,7 @@ public class Vue extends JFrame{
         englobe.setLayout(new BoxLayout(englobe, BoxLayout.Y_AXIS));
 
         englobe.add(plateau);
+        englobe.add(labelDate);
         englobe.add(tabPane);
 
         setContentPane(englobe);
@@ -147,6 +152,33 @@ public class Vue extends JFrame{
             tabPane.setSelectedIndex(-1);
         }
         tabPane.setSelectedIndex(tabPane.getSelectedIndex()+1);
+    }
+
+    public void joueurGagne(){
+        int joueurGagnant = model.testJoueurGagne();
+        if (joueurGagnant >=0){
+            int recommencer = JOptionPane.showConfirmDialog(this, "Le joueur "+(joueurGagnant+1)+" gagne. " +
+                    "Voulez vous refaire une partie", "fin de partie", JOptionPane.YES_NO_OPTION);
+            if (recommencer == JOptionPane.YES_OPTION) {
+                undisplay();
+                model = new Model();
+                controlPlus = new ControlPlus(model,this);
+                controlMouse = new ControlMouse(model,this);
+
+                initIntro();
+                creerIntro();
+                creerMenu();
+
+                setControlButton(new ControlButton(model, this));
+                setControlMenu(new ControlMenu(this, model));
+                nouveau.removeActionListener(nouveau.getActionListeners()[0]);
+                regle.removeActionListener(regle.getActionListeners()[0]);
+                display();
+            }
+            else {
+                System.exit(0);
+            }
+        }
     }
 
     public void display(){setVisible(true);}
