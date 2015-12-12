@@ -14,13 +14,19 @@ public class CartesPlateau {
     }
 
     public boolean compareDate(Carte carte, int index) {
-        Carte cartePrev = tas.get(index);
-        Carte carteNext = tas .get(index);
-        if ((cartePrev.getDate() < carte.getDate()) && (carte.getDate() < carteNext.getDate()) ) {
-            return true;
-        } else {
-            return false;
+        if (index != 0) {
+            Carte cartePrev = tas.get(index-1);
+            if (carte.getDate()<cartePrev.getDate()) {
+                return  false;
+            }
         }
+        if (index != tas.size()) {
+            Carte carteNext = tas.get(index);
+            if (carte.getDate()>carteNext.getDate()) {
+                return  false;
+            }
+        }
+        return  true;
     }
 
     public void ajouterCarte(Carte carte, int index){

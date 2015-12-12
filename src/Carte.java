@@ -28,6 +28,8 @@ public class Carte extends JPanel{
     }
 
     public void retourner(){retourner = true;}
+
+    public void recacher(){retourner = false;}
     
     public boolean getRetourner(){
         return retourner;
@@ -41,6 +43,5 @@ public class Carte extends JPanel{
         }else{
             g.drawImage(image,0,0,250,345,null);
         }
-
     }
 }

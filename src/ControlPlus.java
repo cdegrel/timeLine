@@ -21,6 +21,10 @@ public class ControlPlus implements ActionListener{
                 if (model.plateau.compareDate(model.select, j)){ // coup valide
                     model.select.setBorder(null);
                     model.plateau.ajouterCarte(model.select,j);
+                    for (Joueur joueur : model.joueurs) {
+                        if (joueur.enleverCarte(model.select)){
+                        }
+                    }
                     model.select = null;
                     for (Joueur joueur :model.joueurs){
                         joueur.enleverCarte(model.select);
@@ -45,18 +49,34 @@ public class ControlPlus implements ActionListener{
                     vue.tabPane.repaint();
                 }else{
                     System.out.println("coup impossible, Date : "+model.select.getDate());
+
+                    /*model.select.retourner();
+                    model.select.revalidate();
+                    model.select.repaint();
+
+                    vue.reInitTabPane();
+                    try {
+                        Thread.sleep(2000);
+                    } catch(InterruptedException ex) {
+                        Thread.currentThread().interrupt();
+                    }
+                    model.select.recacher();*/
+
+                    vue.tabPane.remove(model.select);
                     for (Joueur joueur : model.joueurs) {
                         if (joueur.enleverCarte(model.select)){
                             joueur.piocher();
+
                         }
                     }
                     model.pioche.ajouterUneCarte(model.select);
                     model.select = null;
-                    vue.scrolplateau.revalidate();
-                    vue.scrolplateau.repaint();
-                    vue.tabPane.revalidate();
-                    vue.tabPane.repaint();
+
+
+                    vue.reInitTabPane();
+
                 }
+                vue.joueurSuivant();
             }
         }
     }

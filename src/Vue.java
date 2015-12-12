@@ -56,6 +56,19 @@ public class Vue extends JFrame{
         setContentPane(panel);
     }
 
+    public void reInitTabPane() {
+        for (int i = 0; i <model.getNbJoueur(); i++){
+            panelJoueur[i].removeAll();
+            for (Carte crt : model.joueurs[i].getMain()){
+                if (crt.getMouseListeners().length == 0){
+                    crt.addMouseListener(controlMouse);
+                }
+                panelJoueur[i].add(crt);
+            }
+        }
+        tabPane.revalidate();
+    }
+
     public void initAttribut(){
         panelJoueur = new JPanel[model.getNbJoueur()];
         tabPane = new JTabbedPane();
@@ -69,7 +82,9 @@ public class Vue extends JFrame{
 
             panelJoueur[i].revalidate();
             tabPane.add("Joueur "+(i+1),panelJoueur[i]);
+
         }
+        tabPane.setEnabled(false);
 
         initPlateau();
         JScrollPane scrollPlateau = new JScrollPane(scrolplateau,
@@ -125,6 +140,13 @@ public class Vue extends JFrame{
 
         scrolplateau.revalidate();
         scrolplateau.repaint();
+    }
+
+    public void joueurSuivant(){
+        if (tabPane.getSelectedIndex() == model.getNbJoueur()-1){
+            tabPane.setSelectedIndex(-1);
+        }
+        tabPane.setSelectedIndex(tabPane.getSelectedIndex()+1);
     }
 
     public void display(){setVisible(true);}

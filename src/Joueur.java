@@ -39,14 +39,14 @@ public class Joueur {
     public ArrayList<Carte> getMain(){ return main; }
     
     public Carte enleverCarte(int index){
-        if(index<0 || index>main.size()){
+        if(index<0 || index>=main.size()){
             return null;
         }
         return main.remove(index);
     }
 
-    public void enleverCarte(Carte crt){
-        main.remove(crt);
+    public boolean enleverCarte(Carte crt){
+        return main.remove(crt);
     }
     
     public boolean verifMainVide(){
