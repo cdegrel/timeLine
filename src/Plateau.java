@@ -13,8 +13,8 @@ public class Plateau {
         tourJoueur = 1;
 
         Scanner sc = new Scanner (System.in);
-        System.out.println("Combien de joueurs ?? ");
-        nbJoueurs = sc.nextInt();
+        //System.out.println("Combien de joueurs ?? ");
+        //nbJoueurs = sc.nextInt();
     }
 
     public boolean verifierChronologie() {
@@ -24,6 +24,12 @@ public class Plateau {
     public void ajouterUneCarte(Carte carte) {
         pioche.ajouterUneCarte(carte);
     }
+
+    public void setNbJoueurs(int nbJoueurs) { this.nbJoueurs = nbJoueurs; }
+
+    public void setTourJoueur(int tourJoueur) { this.tourJoueur = tourJoueur; }
+
+    public int getTourJoueur() { return tourJoueur; }
 
     public int getNbJoueurs() {
         return nbJoueurs;

@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -13,10 +14,9 @@ public class piocheUnitTest {
     @Test
     public void testTirerUneCarte() {
         Pioche pioche = new Pioche();
-    }
+        Carte carte = new Carte("choucroute", 1800);
+        pioche.ajouterUneCarte(carte);
 
-    @Test
-    public void testAjouterUneCarte() {
-
+        Assert.assertEquals(pioche.tirerUneCarte(), carte);
     }
 }
