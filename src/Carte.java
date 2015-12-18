@@ -18,19 +18,13 @@ public class Carte extends JPanel{
         setPreferredSize(new Dimension(250,345));
         setBackground(new Color(100,100,100)); //pour les voir quand l'image marche pas...
     }
-    
-    public String getNom(){
-        return nom;
-    }
-    
+
     public int getDate(){
         return date;
     }
 
     public void retourner(){retourner = true;}
 
-    public void recacher(){retourner = false;}
-    
     public boolean getRetourner(){
         return retourner;
     }

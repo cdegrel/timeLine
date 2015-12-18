@@ -14,14 +14,6 @@ public class Joueur {
         }
     }
     
-    public String getNom(){
-        return nom;
-    }
-    
-    public Carte jouerCarte(int index){
-        return getCarte(index);
-    }
-    
     public void piocher(){
         if(main.size()>6){
             return;
@@ -37,19 +29,8 @@ public class Joueur {
     }
 
     public ArrayList<Carte> getMain(){ return main; }
-    
-    public Carte enleverCarte(int index){
-        if(index<0 || index>=main.size()){
-            return null;
-        }
-        return main.remove(index);
-    }
 
     public boolean enleverCarte(Carte crt){
         return main.remove(crt);
-    }
-    
-    public boolean verifMainVide(){
-        return main.isEmpty();
     }
 }

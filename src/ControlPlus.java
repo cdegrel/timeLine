@@ -55,18 +55,6 @@ public class ControlPlus implements ActionListener{
                     vue.labelDate.setText("coup impossible, Date : " + model.select.getDate());
                     vue.labelDate.setForeground(Color.RED);
 
-                    /*model.select.retourner();
-                    model.select.revalidate();
-                    model.select.repaint();
-
-                    vue.reInitTabPane();
-                    try {
-                        Thread.sleep(2000);
-                    } catch(InterruptedException ex) {
-                        Thread.currentThread().interrupt();
-                    }
-                    model.select.recacher();*/
-
                     vue.tabPane.remove(model.select);
                     for (Joueur joueur : model.joueurs) {
                         if (joueur.enleverCarte(model.select)){

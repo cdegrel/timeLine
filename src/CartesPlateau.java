@@ -37,20 +37,6 @@ public class CartesPlateau {
         tas.add(carte);
     }
 
-    public boolean verifierChronologie() {
-        int compare = 0;
-        Carte carte;
-        for (int i = 0; i < tas.size(); i++) {
-            carte = tas.get(i);
-            if (carte.getDate() >= compare) {
-                compare = carte.getDate();
-            } else {
-                return false;
-            }
-        }
-        return true;
-    }
-
     public void retournerPlateau(){
         for (Carte crt : tas){ crt.retourner(); }
     }
