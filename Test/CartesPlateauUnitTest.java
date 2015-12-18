@@ -26,23 +26,6 @@ public class CartesPlateauUnitTest {
     }
 
     @Test
-    public void testVerifierChronologie() {
-        Carte carte = new Carte("choucroute", 1800);
-        Carte carte1 = new Carte("raclette", 1900);
-        Carte carte2 = new Carte("polenta", 2000);
-        CartesPlateau cplateau = new CartesPlateau();
-
-        cplateau.ajouterCarte(carte);cplateau.ajouterCarte(carte1);
-        cplateau.ajouterCarte(carte2);
-
-        Assert.assertTrue(cplateau.verifierChronologie());
-
-        cplateau.ajouterCarte(carte);
-
-        Assert.assertFalse(cplateau.verifierChronologie());
-    }
-
-    @Test
     public void testCompareDate() {
         Carte carte = new Carte("choucroute", 1800);
         Carte carte1 = new Carte("raclette", 1900);

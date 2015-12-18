@@ -10,7 +10,6 @@ public class carteUnitTest {
     public void testCarte() {
         Carte carte = new Carte("choucroute", 1800);
         Assert.assertEquals(carte.getDate(), 1800);
-        Assert.assertEquals(carte.getNom(), "choucroute");
     }
 
     @Test
@@ -20,7 +19,5 @@ public class carteUnitTest {
         Assert.assertFalse(carte.getRetourner());
         carte.retourner();
         Assert.assertTrue(carte.getRetourner());
-        carte.recacher();
-        Assert.assertFalse(carte.getRetourner());
     }
 }
