@@ -70,7 +70,14 @@ public class ControlPlus implements ActionListener{
 
                 }
                 vue.joueurGagne();
+                model.tourSuivant();
                 vue.joueurSuivant();
+                if(!model.joueurs[model.tour].isHuman()){
+                    ((Ordi)model.joueurs[model.tour]).jouerCoup();
+                    vue.joueurGagne();
+                    model.tourSuivant();
+                    vue.joueurSuivant();
+                }
             }
         }
     }

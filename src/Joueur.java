@@ -33,4 +33,6 @@ public class Joueur {
     public boolean enleverCarte(Carte crt){
         return main.remove(crt);
     }
+
+    public boolean isHuman(){return true;}
 }

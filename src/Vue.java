@@ -164,10 +164,11 @@ public class Vue extends JFrame{
     }
 
     public void joueurSuivant(){
-        if (tabPane.getSelectedIndex() == model.getNbJoueur()-1){
+        /*if (tabPane.getSelectedIndex() == model.getNbJoueur()-1){
             tabPane.setSelectedIndex(-1);
         }
-        tabPane.setSelectedIndex(tabPane.getSelectedIndex()+1);
+        tabPane.setSelectedIndex(tabPane.getSelectedIndex()+1);*/
+        tabPane.setSelectedIndex(model.tour);
     }
 
     public void joueurGagne(){

@@ -43,7 +43,7 @@ public class Model {
 
     public void tourSuivant(){
         tour++;
-        if (tour>=nbJoueur) tour = 1;
+        if (tour>=nbJoueur) tour = 0;
     }
 
     public ImageIcon getRegle() {
