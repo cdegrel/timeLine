@@ -97,7 +97,6 @@ public class Vue extends JFrame{
                 crt.addMouseListener(controlMouse);
                 panelJoueur[i].add(crt);
             }
-
             panelJoueur[i].revalidate();
             tabPane.add("Joueur "+(i+1),panelJoueur[i]);
 

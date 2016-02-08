@@ -15,7 +15,7 @@ public class Model {
 
     public Carte select;
     
-    public String file = "Images/Default";
+    public String file = "";
 
     public CartesPlateau plateau;
 
@@ -25,8 +25,11 @@ public class Model {
         regles = new ImageIcon("Images/regles.png");
         tour = 0;
 
-        initPioche();
+    }
 
+    public void initAttrib(){
+        initPioche();
+        plateau.viderPlateau();
         plateau.ajouterCarte(pioche.tirerUneCarte());
 
         plateau.retournerPlateau();

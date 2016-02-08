@@ -44,4 +44,8 @@ public class CartesPlateau {
     public List<Carte> getPlateau() {
         return tas;
     }
+
+    public void viderPlateau() {
+        tas.clear();
+    }
 }
