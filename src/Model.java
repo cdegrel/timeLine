@@ -80,10 +80,10 @@ public class Model {
     }
     
     public List<Carte> loadCarte(String fileName) throws IOException {
-        BufferedReader br = null;
+        BufferedReader br;
         char[] tab = new char[2];
         int nbLu;
-        Carte carte = null;
+        Carte carte;
         List<Carte> listCarte = new ArrayList<Carte>();
 
         br = new BufferedReader(new FileReader(fileName));

@@ -1,4 +1,3 @@
-import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -14,11 +13,19 @@ public class ControlButton implements ActionListener{
     }
 
     public void actionPerformed(ActionEvent e){
+        if(vue.pack1.isSelected()){
+            model.file="Images/Default";
+            model.initPioche();
+        }else if(vue.pack2.isSelected()){
+            model.file="Images/Custom1";
+            model.initPioche();
+        }
+
         for (int i = 0; i < vue.bChoix.length; i++) {
             if (e.getSource() == vue.bChoix[i]){
                 model.setNbJoueur(i+2);
                 model.initJoueurs();
-                model.initPioche();
+                //model.initPioche();
                 vue.nouvellePartie();
             }
         }

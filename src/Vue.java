@@ -1,3 +1,5 @@
+import javafx.scene.control.RadioButton;
+
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
 import java.awt.*;
@@ -17,6 +19,9 @@ public class Vue extends JFrame{
     public JTabbedPane tabPane;
     public ScrollablePanel scrolplateau;
     public JLabel labelDate;
+
+    public ButtonGroup choixPaquet;
+    public JRadioButton pack1,pack2;
 
     public Vue(Model model) {
         this.model = model;
@@ -40,6 +45,14 @@ public class Vue extends JFrame{
         JLabel lChoixJoueur = new JLabel("Choix du nombre de joueur");
         pMenu.add(lChoixJoueur);
 
+        choixPaquet = new ButtonGroup();
+        pack1 = new JRadioButton("Paquet 1", true);
+        pack2 = new JRadioButton("Paquet 2");
+
+        choixPaquet.add(pack1);
+        choixPaquet.add(pack2);
+
+
         bChoix = new JButton[5];
         for (int i = 0; i < bChoix.length; i++) {
             bChoix[i] = new JButton((i+2)+" joueurs");
@@ -50,6 +63,10 @@ public class Vue extends JFrame{
     public void creerIntro() {
         JPanel englobe = new JPanel();
         englobe.setLayout(new BorderLayout());
+        JPanel packet = new JPanel();
+        packet.add(pack1);
+        packet.add(pack2);
+        pMenu.add(packet);
         englobe.add(pMenu, BorderLayout.CENTER);
 
         JPanel panel = new JPanel();
