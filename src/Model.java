@@ -84,15 +84,14 @@ public class Model {
         char[] tab = new char[2];
         int nbLu;
         Carte carte = null;
-        List<Carte> listCarte = new ArrayList<>();
+        List<Carte> listCarte = new ArrayList<Carte>();
 
         br = new BufferedReader(new FileReader(fileName));
         nbLu = br.read(tab,0,2);
         while (nbLu > 0) {
             if (nbLu != 2) throw new IOException("file corrupted");
 
-            String line = "";
-            line = br.readLine();
+            String line = br.readLine();
             String[] tab2 = line.split(",");
             carte = new Carte(tab2[0], Integer.parseInt(tab2[1]));
 

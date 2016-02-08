@@ -14,6 +14,7 @@ public class Pioche {
     }
 
     public void ajouterUneCarte(Carte carte) {
+        carte.setBorder(null);
         pioche.addLast(carte);
     }
 
