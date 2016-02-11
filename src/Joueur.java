@@ -35,4 +35,12 @@ public class Joueur {
     }
 
     public boolean isHuman(){return true;}
+    
+    public int tailleMain(){return main.size();}
+    
+    public String getNom(){return nom;}
+    
+    public int jouerCoup(){return 1;}
+    
+    public int jouerCoupPlateau(int n){return n;}
 }
