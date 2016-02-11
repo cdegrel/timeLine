@@ -38,4 +38,8 @@ public class Carte extends JPanel{
             g.drawImage(image,0,0,250,345,null);
         }
     }
+    
+    public String getNom(){
+        return this.nom;
+    }
 }
