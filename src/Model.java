@@ -8,6 +8,7 @@ import java.io.IOException;
 
 public class Model {
     private int nbJoueur;
+    private int nbOrdi;
     public Pioche pioche;
     public Joueur[] joueurs;
     public int tour;
@@ -37,13 +38,16 @@ public class Model {
         initJoueurs();
     }
 
-    public int getNbJoueur(){ return nbJoueur; }
+    public int getNbJoueur(){ return nbJoueur+nbOrdi; }
 
-    public void setNbJoueur(int nbJoueur){ this.nbJoueur = nbJoueur; }
+    public void setNbJoueur(int nbJoueur, int nbOrdi){
+        this.nbJoueur = nbJoueur;
+        this.nbOrdi = nbOrdi;
+    }
 
     public void tourSuivant(){
         tour++;
-        if (tour>=nbJoueur) tour = 0;
+        if (tour>=nbJoueur+nbOrdi) tour = 0;
     }
 
     public ImageIcon getRegle() {
@@ -51,12 +55,14 @@ public class Model {
     }
 
     public void initJoueurs(){
-        joueurs = new Joueur[nbJoueur];
+        joueurs = new Joueur[nbJoueur+nbOrdi];
         for (int i = 0; i < nbJoueur; i++){
             //fait de joueurs humain
-            //joueurs[i] = new Joueur("joueur "+(i+1), pioche);
+            joueurs[i] = new Joueur("joueur "+(i+1), pioche);
+        }
+        for (int j = nbJoueur; j < nbJoueur+nbOrdi; j++) {
             //fait des joueurs ordis
-            joueurs[i] = new Ordi("ordi"+(i+1), pioche, this);
+            joueurs[j] = new Ordi("ordi"+(j+1), pioche, this);
         }
     }
 

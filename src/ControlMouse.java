@@ -26,10 +26,17 @@ public class ControlMouse implements MouseListener {
         if (!model.joueurs[model.getTour()].isHuman()){
             model.joueurs[model.getTour()].jouerCoup();
             vue.repaint();
+            try{
+                Thread.sleep(500);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
+
+
             //test de placement
             int unBpPlus = model.joueurs[model.getTour()].jouerCoupPlateau(vue.bPlus.size());
             if (model.plateau.compareDate(model.select, unBpPlus)){ // coup valide
-                vue.labelDate.setText("coup possible, Date : " + model.select.getDate());
+                vue.labelDate.setText("coup possible, Nom : "+model.select.getNom()+", Date : " + model.select.getDate());
                 vue.labelDate.setForeground(Color.GREEN);
 
                 model.select.setBorder(null);
@@ -61,7 +68,7 @@ public class ControlMouse implements MouseListener {
                 vue.tabPane.revalidate();
                 vue.tabPane.repaint();
             }else{
-                vue.labelDate.setText("coup impossible, Date : " + model.select.getDate());
+                vue.labelDate.setText("coup impossible, Nom : "+model.select.getNom()+", Date : " + model.select.getDate());
                 vue.labelDate.setForeground(Color.RED);
 
                 vue.tabPane.remove(model.select);
@@ -81,7 +88,8 @@ public class ControlMouse implements MouseListener {
             vue.joueurGagne();
             model.tourSuivant();
             vue.joueurSuivant();
-        }else {
+
+        }else { // vrai joueur
         
             for (int i = 0; i < model.getNbJoueur(); i++) {
                 for (int j = 0; j < model.joueurs[i].getMain().size(); j++) {

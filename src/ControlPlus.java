@@ -20,7 +20,7 @@ public class ControlPlus implements ActionListener{
         for (int j = 0; j < vue.bPlus.size(); j++) {
             if (e.getSource() == vue.bPlus.get(j) && model.select != null){
                 if (model.plateau.compareDate(model.select, j)){ // coup valide
-                    vue.labelDate.setText("coup possible, Date : " + model.select.getDate());
+                    vue.labelDate.setText("coup possible, Nom : "+model.select.getNom()+", Date : " + model.select.getDate());
                     vue.labelDate.setForeground(Color.GREEN);
 
                     model.select.setBorder(null);
@@ -52,7 +52,7 @@ public class ControlPlus implements ActionListener{
                     vue.tabPane.revalidate();
                     vue.tabPane.repaint();
                 }else{
-                    vue.labelDate.setText("coup impossible, Date : " + model.select.getDate());
+                    vue.labelDate.setText("coup impossible, Nom : "+model.select.getNom()+", Date : " + model.select.getDate());
                     vue.labelDate.setForeground(Color.RED);
 
                     vue.tabPane.remove(model.select);
@@ -72,12 +72,6 @@ public class ControlPlus implements ActionListener{
                 vue.joueurGagne();
                 model.tourSuivant();
                 vue.joueurSuivant();
-                if(!model.joueurs[model.tour].isHuman()){
-                    ((Ordi)model.joueurs[model.tour]).jouerCoup();
-                    vue.joueurGagne();
-                    model.tourSuivant();
-                    vue.joueurSuivant();
-                }
             }
         }
     }

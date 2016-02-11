@@ -1,7 +1,4 @@
-import javafx.scene.control.RadioButton;
-
 import javax.swing.*;
-import javax.swing.border.BevelBorder;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -22,6 +19,8 @@ public class Vue extends JFrame{
 
     public ButtonGroup choixPaquet;
     public JRadioButton pack1,pack2;
+
+    public JTextField activerIA;
 
     public Vue(Model model) {
         this.model = model;
@@ -52,10 +51,11 @@ public class Vue extends JFrame{
         choixPaquet.add(pack1);
         choixPaquet.add(pack2);
 
+        activerIA = new JTextField("0");
 
-        bChoix = new JButton[5];
+        bChoix = new JButton[6];
         for (int i = 0; i < bChoix.length; i++) {
-            bChoix[i] = new JButton((i+2)+" joueurs");
+            bChoix[i] = new JButton((i+1)+" joueurs");
             pMenu.add(bChoix[i]);
         }
     }
@@ -67,6 +67,10 @@ public class Vue extends JFrame{
         packet.add(pack1);
         packet.add(pack2);
         pMenu.add(packet);
+        JPanel panelIA = new JPanel();
+        panelIA.add(new JLabel("Nombre d'IA : "));
+        panelIA.add(activerIA);
+        englobe.add(panelIA,BorderLayout.PAGE_START);
         englobe.add(pMenu, BorderLayout.CENTER);
 
         JPanel panel = new JPanel();
@@ -98,7 +102,7 @@ public class Vue extends JFrame{
                 panelJoueur[i].add(crt);
             }
             panelJoueur[i].revalidate();
-            tabPane.add("Joueur "+(i+1),panelJoueur[i]);
+            tabPane.add(model.joueurs[i].getNom(),panelJoueur[i]);
 
         }
         tabPane.setEnabled(false);
