@@ -53,7 +53,10 @@ public class Model {
     public void initJoueurs(){
         joueurs = new Joueur[nbJoueur];
         for (int i = 0; i < nbJoueur; i++){
-            joueurs[i] = new Joueur("joueur "+(i+1), pioche);
+            //fait de joueurs humain
+            //joueurs[i] = new Joueur("joueur "+(i+1), pioche);
+            //fait des joueurs ordis
+            joueurs[i] = new Ordi("ordi"+(i+1), pioche, this);
         }
     }
 
@@ -103,4 +106,6 @@ public class Model {
         }
         return listCarte;
     }
+    
+    public int getTour(){return tour;}
 }
