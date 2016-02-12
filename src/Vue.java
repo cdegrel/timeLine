@@ -68,10 +68,10 @@ public class Vue extends JFrame{
         packet.add(pack2);
         pMenu.add(packet);
         JPanel panelIA = new JPanel();
-        panelIA.add(new JLabel("Nombre d'IA : "));
+        panelIA.add(new JLabel("avec IA supplementaires : "));
         panelIA.add(activerIA);
-        englobe.add(panelIA,BorderLayout.PAGE_START);
-        englobe.add(pMenu, BorderLayout.CENTER);
+        englobe.add(pMenu, BorderLayout.PAGE_START);
+        englobe.add(panelIA,BorderLayout.CENTER);
 
         JPanel panel = new JPanel();
         panel.add(englobe);
