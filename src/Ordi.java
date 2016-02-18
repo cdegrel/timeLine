@@ -7,7 +7,8 @@ import java.util.Random;
  */
 public class Ordi extends Joueur{
     public Model model;
-    
+    private int dateApprox = 0;
+
     Random rand = new Random();
 
     public Ordi(String nom, Pioche pioche) {
@@ -26,7 +27,10 @@ public class Ordi extends Joueur{
         //choisi une carte qui est dans son paquet
         int indexCarte = rand.nextInt(tailleMain());
         Carte carte = getCarte(indexCarte);
-        System.out.println( getNom()+" à choisi la carte "+carte.getNom());
+
+        // prend une date a 100 ans pres
+        dateApprox = carte.getDate() + (100-rand.nextInt(200));
+        System.out.println( getNom()+" à choisi la carte "+carte.getNom()+" date approximative : "+dateApprox);
         //la met en rouge
         if (!carte.getRetourner()){
             model.select = carte;
@@ -34,8 +38,12 @@ public class Ordi extends Joueur{
         }
         return indexCarte;
     }
-    
+
     public int jouerCoupPlateau(int nbBpPlus){
-        return rand.nextInt(nbBpPlus);
+        int index = 0;
+        for (Carte crt : model.plateau.getPlateau()){
+            if(crt.getDate() < dateApprox) index++;
+        }
+        return index;
     }
 }
