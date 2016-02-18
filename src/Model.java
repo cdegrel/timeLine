@@ -83,7 +83,7 @@ public class Model {
     }
 
     public int testJoueurGagne(){
-        for(int i=0; i<nbJoueur; i++){
+        for(int i=0; i<nbJoueur+nbOrdi; i++){
             if (joueurs[i].getMain().size() == 0){
                 return i;
             }

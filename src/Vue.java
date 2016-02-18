@@ -178,7 +178,7 @@ public class Vue extends JFrame{
     public void joueurGagne(){
         int joueurGagnant = model.testJoueurGagne();
         if (joueurGagnant >=0){
-            int recommencer = JOptionPane.showConfirmDialog(this, "Le joueur "+(joueurGagnant+1)+" gagne. " +
+            int recommencer = JOptionPane.showConfirmDialog(this, model.joueurs[joueurGagnant].getNom()+" gagne. " +
                     "Voulez vous refaire une partie", "fin de partie", JOptionPane.YES_NO_OPTION);
             if (recommencer == JOptionPane.YES_OPTION) {
                 undisplay();
