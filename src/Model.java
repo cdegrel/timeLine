@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -15,7 +16,7 @@ public class Model {
     public ImageIcon regles;
 
     public Carte select;
-    
+
     public String file = "";
 
     public CartesPlateau plateau;
@@ -90,7 +91,20 @@ public class Model {
         }
         return -1;
     }
-    
+
+    public List<String> getListPaquet(){
+        File rep = new File("Images");
+        String[] files = rep.list();
+        List<String> list = new ArrayList<String>();
+        for(String file : files){
+            if (!file.contains(".") && !file.equals("Date") && !file.equals("Image")){
+                list.add(file);
+            }
+        }
+
+        return list;
+    }
+
     public List<Carte> loadCarte(String fileName) throws IOException {
         BufferedReader br;
         char[] tab = new char[2];
@@ -112,6 +126,6 @@ public class Model {
         }
         return listCarte;
     }
-    
+
     public int getTour(){return tour;}
 }

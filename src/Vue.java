@@ -17,8 +17,7 @@ public class Vue extends JFrame{
     public ScrollablePanel scrolplateau;
     public JLabel labelDate;
 
-    public ButtonGroup choixPaquet;
-    public JRadioButton pack1,pack2;
+    public JComboBox choixPaquet;
 
     public JTextField activerIA;
 
@@ -44,12 +43,8 @@ public class Vue extends JFrame{
         JLabel lChoixJoueur = new JLabel("Choix du nombre de joueur");
         pMenu.add(lChoixJoueur);
 
-        choixPaquet = new ButtonGroup();
-        pack1 = new JRadioButton("Paquet 1", true);
-        pack2 = new JRadioButton("Paquet 2");
-
-        choixPaquet.add(pack1);
-        choixPaquet.add(pack2);
+        choixPaquet = new JComboBox(model.getListPaquet().toArray());
+        choixPaquet.setSelectedIndex(0);
 
         activerIA = new JTextField("0");
 
@@ -64,8 +59,7 @@ public class Vue extends JFrame{
         JPanel englobe = new JPanel();
         englobe.setLayout(new BorderLayout());
         JPanel packet = new JPanel();
-        packet.add(pack1);
-        packet.add(pack2);
+        packet.add(choixPaquet);
         pMenu.add(packet);
         JPanel panelIA = new JPanel();
         panelIA.add(new JLabel("avec IA supplementaires : "));

@@ -32,13 +32,10 @@ public class ControlButton implements ActionListener{
             return;
         }
 
-        if(vue.pack1.isSelected()){
-            model.file="Images/Default";
 
-        }else if(vue.pack2.isSelected()){
-            model.file="Images/Custom1";
+        model.file="Images/"+vue.choixPaquet.getSelectedItem();
 
-        }
+
         model.initAttrib();
 
         for (int i = 0; i < vue.bChoix.length; i++) {
